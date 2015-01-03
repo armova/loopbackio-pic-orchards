@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "https://sheltered-hollows-7317.herokuapp.com/",
+  "host": "sheltered-hollows-7317.herokuapp.com",
   "port": 3000,
-  "url": "https://sheltered-hollows-7317.herokuapp.com:3000/"
+  "url": "sheltered-hollows-7317.herokuapp.com:3000/"
 }
