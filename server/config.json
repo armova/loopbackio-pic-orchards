@@ -1,6 +1,6 @@
 {
   "restApiRoot": "/api",
-  "host": "https://pic-loopback-map-database.herokuapp.com/",
+  "host": "https://sheltered-hollows-7317.herokuapp.com/",
   "port": 3000,
-  "url": "https://pic-loopback-map-database.herokuapp.com:3000/"
+  "url": "https://sheltered-hollows-7317.herokuapp.com:3000/"
 }
