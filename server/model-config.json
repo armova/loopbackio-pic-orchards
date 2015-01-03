@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "geoElement": {
+    "dataSource": "geoPointsDB",
+    "public": false
+  },
+  "orchard": {
+    "dataSource": "geoPointsDB",
+    "public": true
+  },
+  "recycling": {
+    "dataSource": "geoPointsDB",
+    "public": true
+  },
+  "patrimonial": {
+    "dataSource": "geoPointsDB",
+    "public": true
+  },
+  "myUser": {
+    "dataSource": "geoPointsDB",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource",
+    "public": false
+  }
+}

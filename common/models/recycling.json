@@ -1,0 +1,70 @@
+{
+  "name": "recycling",
+  "plural": "recyclings",
+  "base": "geoElement",
+  "properties": {
+    "facebook": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "characteristics": {
+      "type": "string"
+    },
+    "materialsReceived": {
+      "type": "string"
+    },
+    "materialsDestination": {
+      "type": "string"
+    },
+    "needHelpWith": {
+      "type": "string"
+    },
+    "shareOrMarket": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}

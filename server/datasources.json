@@ -1,0 +1,35 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "geoPointsDB": {
+    "host": "ec2-54-225-135-30.compute-1.amazonaws.com",
+    "port": 5432,
+    "database": "d3pq0nlgjnnbs6",
+    "username": "nxgwtqhcabekcr",
+    "password": "J14hG4B8goxL51U_ns_7GHvCVF",
+    "name": "geoPointsDB",
+    "connector": "postgresql",
+    "ssl": "true"
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.sendgrid.net",
+        "secure": false,
+        "port": 587,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "armova",
+          "pass": "elpato64"
+        }
+      }
+    ]
+  }
+}

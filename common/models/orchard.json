@@ -1,0 +1,79 @@
+{
+  "name": "orchard",
+  "plural": "orchards",
+  "base": "geoElement",
+  "properties": {
+    "schedule": {
+      "type": "string"
+    },
+    "characteristics": {
+      "type": "string"
+    },
+    "cropTypology": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "grownCrops": {
+      "type": "string"
+    },
+    "specialProducts": {
+      "type": "string"
+    },
+    "cultivationConcepts": {
+      "type": "string"
+    },
+    "availableForSharing": {
+      "type": "string"
+    },
+    "needHelpWith": {
+      "type": "string"
+    },
+    "shareOrMarket": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY",
+      "property": "deleteById"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": []
+}
