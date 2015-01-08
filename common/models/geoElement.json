@@ -51,10 +51,10 @@
   },
   "validations": [],
   "relations": {
-    "user": {
+    "owner": {
       "type": "belongsTo",
-      "model": "User",
-      "foreignKey": "id"
+      "model": "myUser",
+      "foreignKey": "ownerId"
     }
   },
   "acls": [

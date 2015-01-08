@@ -4,17 +4,19 @@ var Recycling = server.models.recycling;
 var recyclings = [
     { created: new Date(),
       updated: new Date(),
-      createdBy: 7,
-      updatedBy: 7,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'MyRecycling',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     },
     { created: new Date(),
       updated: new Date(),
-      createdBy: 8,
-      updatedBy: 8,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'YourRecycling',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     } ];
 
 var count = recyclings.length;

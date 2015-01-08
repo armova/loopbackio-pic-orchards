@@ -4,17 +4,19 @@ var Patrimonial = server.models.patrimonial;
 var patrimonials = [
     { created: new Date(),
       updated: new Date(),
-      createdBy: 5,
-      updatedBy: 5,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'MyPatrimonial',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     },
     { created: new Date(),
       updated: new Date(),
-      createdBy: 6,
-      updatedBy: 6,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'YourPatrimonial',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     } ];
 
 var count = patrimonials.length;

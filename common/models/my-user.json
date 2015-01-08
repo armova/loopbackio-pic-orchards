@@ -3,7 +3,13 @@
   "base": "User",
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "geoElements": {
+      "type": "hasMany",
+      "model": "geoElement",
+      "foreignKey": "geoElementId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",

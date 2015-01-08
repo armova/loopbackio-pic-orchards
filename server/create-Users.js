@@ -1,16 +1,12 @@
 var loopback = require('loopback');
 var server = require('./server');
 
-var app = loopback();
-var Role = app.models.Role;
-var RoleMapping = app.models.RoleMapping;
-
 var dataSource = server.dataSources.geoPointsDB;
 var MyUser = server.models.myUser;
 
 var myUsers = [
-    { email: 'amora@incompanysolutions.com',
-      password: 'secret1'
+    { email: 'a3@3vot.com',
+      password: 'Anaconda1979'
     },
     { email: 'amora@rodcocr.com',
       password: 'secret2'

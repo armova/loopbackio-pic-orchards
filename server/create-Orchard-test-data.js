@@ -4,17 +4,19 @@ var Orchard = server.models.orchard;
 var orchards = [
     { created: new Date(),
       updated: new Date(),
-      createdBy: 4,
-      updatedBy: 4,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'MyOrchard',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     },
     { created: new Date(),
       updated: new Date(),
-      createdBy: 3,
-      updatedBy: 3,
+      createdBy: 1,
+      updatedBy: 1,
       name: 'YourOrchard',
       location: {lat: 10.32424, lng: 5.84978},
+      ownerId: 1,
     } ];
 
 var count = orchards.length;
