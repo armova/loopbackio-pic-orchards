@@ -5,10 +5,10 @@ var dataSource = server.dataSources.geoPointsDB;
 var MyUser = server.models.myUser;
 
 var myUsers = [
-    { email: 'a3@3vot.com',
-      password: 'Anaconda1979'
+    { email: 'mymail@mail.com',
+      password: 'secret1'
     },
-    { email: 'amora@rodcocr.com',
+    { email: 'yourmail@mail.com',
       password: 'secret2'
     } ];
 

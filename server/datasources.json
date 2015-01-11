@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "geoPointsDB": {
-    "host": "ec2-54-225-135-30.compute-1.amazonaws.com",
-    "port": 5432,
-    "database": "d3pq0nlgjnnbs6",
-    "username": "nxgwtqhcabekcr",
-    "password": "J14hG4B8goxL51U_ns_7GHvCVF",
-    "name": "geoPointsDB",
+    "host": "",
+    "port": ,
+    "database": "",
+    "username": "",
+    "password": "",
+    "name": "",
     "connector": "postgresql",
     "ssl": "true"
   },
@@ -26,8 +26,8 @@
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "armova",
-          "pass": "elpato64"
+          "user": "",
+          "pass": ""
         }
       }
     ]
