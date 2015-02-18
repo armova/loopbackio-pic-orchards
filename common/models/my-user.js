@@ -12,11 +12,11 @@ module.exports = function(MyUser) {
           	type: 'email',
           	to: user.email,
           	from: 'a3@3vot.com',
-          	subject: 'Thanks for Registering at PIC',
-          	text: 'Please verify your email address: {href}',
+          	subject: 'Hola! Gracias por registrarte en la PIC',
+          	text: 'Abrí este link y tu cuenta quedará verificada: {href}',
           	//template: './verify.ejs',
           	redirect: '/',
-          	verifyHref: 'http://localhost:4000/api/myUsers/confirm?uid=' + uId + '&redirect=/welcome'
+          	verifyHref: 'http://sheltered-hollows-7317.herokuapp.com/api/myUsers/confirm?uid=' + uId + '&redirect=/welcome'
     	};
     	user.verify(options, next);
 	});
