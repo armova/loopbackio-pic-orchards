@@ -1,4 +1,6 @@
 var config = require('../../server/config.json');
+var fs = require("fs");
+var verifyTemplate = fs.readFileSync( __dirname + "/../views/confirmationLayout.html");
 
 module.exports = function(MyUser) {
 
@@ -14,7 +16,7 @@ module.exports = function(MyUser) {
           	from: 'a3@3vot.com',
           	subject: 'Confirmá tu correo en la PIC',
           	text: 'Abrí este link y tu cuenta quedará verificada: {href}',
-          	template: './templates/verify.ejs',
+          	template: verifyTemplate,
           	redirect: '/',
           	verifyHref: 'http://sheltered-hollows-7317.herokuapp.com/api/myUsers/confirm?uid=' + uId + '&redirect=/welcome'
     	};
