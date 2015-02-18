@@ -12,13 +12,13 @@ module.exports = function(MyUser) {
           	type: 'email',
           	to: user.email,
           	from: 'a3@3vot.com',
-          	subject: 'Hola! Gracias por registrarte en la PIC',
+          	subject: 'Confirmá tu correo en la PIC',
           	text: 'Abrí este link y tu cuenta quedará verificada: {href}',
-          	//template: './verify.ejs',
+          	template: './templates/verify.ejs',
           	redirect: '/',
           	verifyHref: 'http://sheltered-hollows-7317.herokuapp.com/api/myUsers/confirm?uid=' + uId + '&redirect=/welcome'
     	};
-    	MyUser.verify(options, next);
+    	user.verify(options, next);
 	});
 
   MyUser.on('resetPasswordRequest', function(info){
