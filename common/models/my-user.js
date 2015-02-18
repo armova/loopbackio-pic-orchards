@@ -18,7 +18,7 @@ module.exports = function(MyUser) {
           	redirect: '/',
           	verifyHref: 'http://sheltered-hollows-7317.herokuapp.com/api/myUsers/confirm?uid=' + uId + '&redirect=/welcome'
     	};
-    	user.verify(options, next);
+    	MyUser.verify(options, next);
 	});
 
   MyUser.on('resetPasswordRequest', function(info){
