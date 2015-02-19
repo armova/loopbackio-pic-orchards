@@ -13,7 +13,7 @@ module.exports = function(MyUser) {
       	var options = {
           	type: 'email',
           	to: user.email,
-          	from: 'info@picapp.org/.com',
+          	from: 'info@picapp.org',
           	subject: 'Confirmá tu correo en la PIC',
           	text: 'Abrí este link y tu cuenta quedará verificada: {href}',
           	template: __dirname + "/verify.ejs",
