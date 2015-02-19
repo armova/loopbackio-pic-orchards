@@ -1,8 +1,5 @@
 var config = require('../../server/config.json');
 var loopback = require('loopback');
-var fs = require('fs');
-//var verifyTemplate = fs.readFileSync( __dirname + "/../templates/verify.ejs");
-//var template = loopback.template( __dirname + "/../templates/verify.ejs");
 
 
 module.exports = function(MyUser) {
@@ -16,7 +13,7 @@ module.exports = function(MyUser) {
       	var options = {
           	type: 'email',
           	to: user.email,
-          	from: 'a3@3vot.com',
+          	from: 'info@picapp.org/.com',
           	subject: 'Confirmá tu correo en la PIC',
           	text: 'Abrí este link y tu cuenta quedará verificada: {href}',
           	template: __dirname + "/verify.ejs",
