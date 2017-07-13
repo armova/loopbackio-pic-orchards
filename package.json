@@ -1,6 +1,9 @@
 {
   "name": "loopback-map-database",
   "version": "0.0.1",
+  "engines": {
+    "node": "7.10.1"
+  },
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint ."
